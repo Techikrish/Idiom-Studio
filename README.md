@@ -2,6 +2,12 @@
 
 **An installable design skill for coding agents. Native iOS and Android only.**
 
+> [!WARNING]
+> **Beta software.** Idiom Studio is under active development. Expect bugs, rough edges, and breaking
+> changes between releases. If something looks wrong, please
+> [open an issue](https://github.com/Techikrish/Idiom-Studio/issues) with the brief, the chosen
+> direction, and the generated files.
+
 You describe the app. Idiom Studio chooses a committed visual direction — family, variant, accent,
 mode — then produces design tokens, a rendered preview, and drop-in SwiftUI/Compose themes. The agent
 uses that package to build the screens, so the result looks like it was designed for the brief instead
@@ -11,7 +17,7 @@ of recolored from the same AI template.
 brief → family → variant → accent + mode → tokens → spec + preview + SwiftUI/Compose themes
 ```
 
-- 10 families, 30 variants, 4 accents per family, light and dark.
+- 10 families, 30 variants, 3–4 accents per family, light and dark.
 - Deterministic: the same brief always produces the same direction.
 - Native grammar and accessibility are part of the skill, not an afterthought.
 - Zero dependencies. Node 20+ only. System fonts only.
