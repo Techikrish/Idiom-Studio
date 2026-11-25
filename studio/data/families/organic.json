@@ -1,0 +1,137 @@
+{
+  "id": "organic",
+  "name": "Organic",
+  "thesis": "The app is grown, not assembled: irregular rhythm, natural color, and materials that feel handled.",
+  "bestFor": "Food, cooking, gardening, farming, nature, sustainability, and slow living.",
+  "keywords": ["food", "recipe", "cooking", "garden", "plant", "farm", "nature", "sustainability", "market", "nutrition", "seasonal", "harvest", "soil", "compost", "outdoors", "slow", "craft", "wellness"],
+  "feelings": ["warm", "earthy", "nourishing", "grounded", "patient", "abundant", "handmade", "alive"],
+  "contentTypes": ["visual", "text", "mixed"],
+  "avoidFor": ["trading", "nightlife", "enterprise software", "gaming"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "market-table",
+      "name": "Market Table",
+      "summary": "A market stall: abundant produce, hand-written price tags, and a warm crowd of cards.",
+      "signature": "A hand-written price tag pinned to the image.",
+      "treatment": "Warm cream, produce photography, tilted tags, and a loose but readable grid.",
+      "density": "comfortable",
+      "displaySize": 38,
+      "bodySize": 16,
+      "labelCase": "mixed",
+      "previewClass": "organic-market-table"
+    },
+    {
+      "id": "garden-plot",
+      "name": "Garden Plot",
+      "summary": "A garden bed: rows, seasons, and a calm record of what is growing.",
+      "signature": "A seasonal band across the top of the plot.",
+      "treatment": "Deep green surfaces, row-based layout, botanical labels, and a seasonal color band.",
+      "density": "comfortable",
+      "displaySize": 34,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "organic-garden-plot"
+    },
+    {
+      "id": "slow-kitchen",
+      "name": "Slow Kitchen",
+      "summary": "A kitchen notebook: a recipe in steps, generous ingredients, and no rush.",
+      "signature": "A timeline that marks the resting and cooking stages.",
+      "treatment": "Paper white, serif display, ingredient lists in the margin, and a long vertical timeline.",
+      "density": "spacious",
+      "displaySize": 36,
+      "bodySize": 17,
+      "labelCase": "small-caps",
+      "previewClass": "organic-slow-kitchen"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F6F2E8",
+      "surface": "#FFFCF5",
+      "elevated": "#FFFFFF",
+      "text": "#20241B",
+      "muted": "#5C6252",
+      "border": "#DDD6C4"
+    },
+    "dark": {
+      "background": "#12150F",
+      "surface": "#1B2017",
+      "elevated": "#242B1F",
+      "text": "#F2F3E8",
+      "muted": "#B0B6A2",
+      "border": "#333B2C"
+    },
+    "accents": [
+      { "id": "tomato", "name": "Tomato", "light": "#A3341F", "dark": "#FF8A6B", "onLight": "#FFFFFF", "onDark": "#220A05" },
+      { "id": "olive", "name": "Olive", "light": "#556B2F", "dark": "#BED48A", "onLight": "#FFFFFF", "onDark": "#141A08" },
+      { "id": "pumpkin", "name": "Pumpkin", "light": "#96540D", "dark": "#F3B25E", "onLight": "#FFFFFF", "onDark": "#1E1002" },
+      { "id": "beet", "name": "Beet", "light": "#7A2447", "dark": "#EBA0BE", "onLight": "#FFFFFF", "onDark": "#1E0710" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "serif",
+    "body": "sans",
+    "numeric": "proportional",
+    "displayFamily": "New York / Noto Serif",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.333,
+    "sizes": { "display": 38, "title": 28, "headline": 21, "body": 17, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.015, "label": 0.05 }
+  },
+  "shape": { "family": "irregular", "small": 10, "medium": 18, "large": 32, "pill": 999 },
+  "surface": "paper-produce",
+  "motion": { "curve": "ease-in-out", "fast": 180, "base": 300, "slow": 460 },
+  "signatureMoves": [
+    "A hand-written price tag pinned to the image.",
+    "A seasonal band across the top of the plot.",
+    "A timeline that marks the resting and cooking stages.",
+    "An ingredient list that sits in the margin."
+  ],
+  "platform": {
+    "ios": "Use a large title and a warm surface. Keep the system back gesture. Use SF Symbols with a rounded weight. Support Dynamic Type; keep body text at least 17pt. Motion should be gentle and respect reduce motion.",
+    "android": "Edge-to-edge with a compact top app bar. Use Material Symbols with a rounded style. Support 200% font scale and predictive back. Keep touch targets at 48dp. Avoid hard shadows."
+  },
+  "principles": [
+    "Season and ingredient before brand.",
+    "Irregularity is rhythm, not randomness.",
+    "Warmth comes from color and material, not from shadows.",
+    "The recipe or plant is always the hero."
+  ],
+  "avoid": [
+    "A generic wellness gradient over a stock photo.",
+    "Every card rotated in a different direction.",
+    "Serif used for long dense data.",
+    "Fake farms, fake certifications, or invented sourcing claims."
+  ],
+  "content": {
+    "eyebrow": "EARLY AUTUMN · 6 RECIPES",
+    "title": "What the garden gives",
+    "subtitle": "Six dishes for the last warm weeks.",
+    "items": [
+      { "title": "Charred tomato toast", "meta": "25 min · 2 servings", "body": "Ripe tomatoes, sourdough, and a lot of olive oil" },
+      { "title": "Roasted squash", "meta": "50 min · 4 servings", "body": "Whole squash, sage, and brown butter" },
+      { "title": "Apple and fennel", "meta": "15 min · 2 servings", "body": "Shaved fennel, crisp apple, lemon" }
+    ],
+    "action": "Open the recipe",
+    "nav": ["Garden", "Recipes", "Saved"]
+  },
+  "screens": {
+    "home": "One seasonal feature with a real photograph and a short line, then a loose grid of recipes or plants. Use whitespace and scale, not a wall of equal cards.",
+    "detail": "A recipe or plant detail: image, name, season, time, ingredients or care, then steps. Ingredients sit near the top; the method is readable in one column.",
+    "compose": "A planting or recipe note: what, when, where, and one photo. Keep it short and preserve drafts.",
+    "profile": "A garden record: what is growing, what was harvested, and what is saved. No invented social feed."
+  },
+  "components": {
+    "button": "Softly rounded 12-18pt, solid earthy fill, generous padding. Secondary actions are text with a rule.",
+    "list": "Image-forward rows with an irregular but consistent rhythm. Tags can tilt; text never does.",
+    "input": "Warm paper field with a visible label and hand-friendly height. Validation in plain language.",
+    "navigation": "Large title, tab bar for three peers, sheets for detail. No floating buttons."
+  }
+}

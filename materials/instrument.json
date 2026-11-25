@@ -1,0 +1,28 @@
+{
+  "id": "instrument",
+  "name": "Instrument",
+  "character": "Dense and exact. Built for numbers, status, and repeated work.",
+  "keywords": ["finance", "analytics", "developer", "dashboard", "tool", "productivity", "metrics", "trading", "admin", "monitoring"],
+  "colors": {
+    "light": {
+      "surface": "#F4F4F1",
+      "onSurface": "#111311",
+      "muted": "#555A55",
+      "accent": "#1D4ED8",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#0E100F",
+      "onSurface": "#EDEFEA",
+      "muted": "#9AA09A",
+      "accent": "#7AA2FF",
+      "onAccent": "#0E100F"
+    }
+  },
+  "type": { "display": "sans", "body": "sans", "numeric": "tabular" },
+  "shape": { "family": "square", "small": 4, "medium": 8, "large": 12 },
+  "surface": "border-first",
+  "motion": { "curve": "linear-fast", "fast": 100, "base": 160, "slow": 240 },
+  "density": "compact",
+  "signature": "Tabular figures, unit-aligned columns, and a persistent status line."
+}

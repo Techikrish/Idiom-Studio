@@ -1,0 +1,62 @@
+{
+  "name": "idiom-studio",
+  "version": "0.2.0",
+  "description": "Agent skill that turns an app brief into a distinctive native iOS and Android design direction, tokens, preview, and SwiftUI/Compose themes.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techikrish/Idiom-Studio.git"
+  },
+  "homepage": "https://github.com/Techikrish/Idiom-Studio#readme",
+  "bugs": {
+    "url": "https://github.com/Techikrish/Idiom-Studio/issues"
+  },
+  "type": "module",
+  "bin": {
+    "idiom-studio": "./bin/studio.mjs",
+    "idiom-gate": "./bin/idiom.mjs",
+    "idiom": "./bin/idiom.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "eval": "node scripts/eval.mjs",
+    "verify": "npm test && npm run eval",
+    "studio": "node bin/studio.mjs",
+    "studio:validate": "node bin/studio.mjs validate",
+    "install:skill": "./install.sh",
+    "lint:ios": "node bin/idiom.mjs lint evals/fixtures/slop-ios --mode release",
+    "lint:android": "node bin/idiom.mjs lint evals/fixtures/slop-android --mode release",
+    "states": "node bin/idiom.mjs states evals/fixtures/slop-android"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "design",
+    "design-system",
+    "ios",
+    "android",
+    "swiftui",
+    "compose",
+    "ui",
+    "skill",
+    "agent",
+    "claude-code",
+    "codex",
+    "opencode"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "studio",
+    "references",
+    "materials",
+    "scripts",
+    "evals",
+    "install.sh",
+    "SKILL.md",
+    "GATE.md",
+    "README.md",
+    "LICENSE"
+  ]
+}

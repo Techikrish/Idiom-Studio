@@ -1,0 +1,28 @@
+{
+  "id": "field",
+  "name": "Field",
+  "character": "Photo-led and open. Content occupies the frame.",
+  "keywords": ["travel", "maps", "outdoors", "photography", "hiking", "local", "weather", "adventure", "nature", "discovery"],
+  "colors": {
+    "light": {
+      "surface": "#F7F6F2",
+      "onSurface": "#171A16",
+      "muted": "#5C635A",
+      "accent": "#2F6B3F",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#0F1310",
+      "onSurface": "#EFF3EC",
+      "muted": "#A0AA9E",
+      "accent": "#7BC48C",
+      "onAccent": "#0F1310"
+    }
+  },
+  "type": { "display": "serif", "body": "humanist-sans", "numeric": "proportional" },
+  "shape": { "family": "soft", "small": 6, "medium": 12, "large": 20 },
+  "surface": "overlay",
+  "motion": { "curve": "ease-out-soft", "fast": 200, "base": 300, "slow": 420 },
+  "density": "comfortable",
+  "signature": "Full-bleed media, text on a measured scrim, and location as structure."
+}

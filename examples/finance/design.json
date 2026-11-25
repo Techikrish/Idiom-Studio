@@ -1,0 +1,287 @@
+{
+  "studio": "0.2.0",
+  "app": {
+    "name": "Ledger",
+    "slug": "ledger",
+    "brief": "A precise, dense portfolio app for tracking investments, budgets, and market positions. Dark, technical, fast, green signal."
+  },
+  "direction": {
+    "family": "instrument",
+    "familyName": "Instrument",
+    "variant": "flight-deck",
+    "variantName": "Flight Deck",
+    "accent": "signal-green",
+    "accentName": "Signal Green",
+    "mode": "dark",
+    "seed": "a precise dense portfolio app for tracking investments budgets and market positions dark technical fast green signal ledger",
+    "confidence": "high"
+  },
+  "thesis": "The app is a precision instrument: dense information, exact alignment, and no decoration that competes with the data.",
+  "summary": "A dark cockpit: segmented gauges, uppercase labels, and amber alerts.",
+  "signature": "A segmented status rail across the top.",
+  "treatment": "Dark-first, mono labels, compact rows, and a single amber warning color.",
+  "why": {
+    "signals": [
+      "budget",
+      "portfolio",
+      "investment"
+    ],
+    "tones": [
+      "cool",
+      "warm",
+      "natural"
+    ],
+    "alternatives": [
+      {
+        "id": "organic",
+        "name": "Organic",
+        "score": 4.75,
+        "matched": [
+          "market"
+        ]
+      },
+      {
+        "id": "utility",
+        "name": "Utility",
+        "score": 2.5,
+        "matched": [
+          "budget"
+        ]
+      }
+    ],
+    "note": "The brief strongly matches Instrument. The layout, type, and surface decisions come from that family rather than from a generic template."
+  },
+  "palette": {
+    "light": {
+      "background": "#F3F4F2",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#111311",
+      "muted": "#555A55",
+      "border": "#D4D8D2",
+      "accent": "#0B7A3B",
+      "onAccent": "#FFFFFF",
+      "success": "#1F6B45",
+      "warning": "#8A5A00",
+      "danger": "#A61B2B"
+    },
+    "dark": {
+      "background": "#0B0D0C",
+      "surface": "#141715",
+      "elevated": "#1C201D",
+      "text": "#F1F5F0",
+      "muted": "#A3ADA4",
+      "border": "#2B322C",
+      "accent": "#4ADE80",
+      "onAccent": "#08130C",
+      "success": "#7BC4A0",
+      "warning": "#E0B05A",
+      "danger": "#FF8A8A"
+    },
+    "contrast": {
+      "light": {
+        "text": {
+          "ratio": "16.9:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "muted": {
+          "ratio": "6.4:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "accentOnSurface": {
+          "ratio": "5.4:1",
+          "min": "3:1",
+          "pass": true
+        },
+        "onAccent": {
+          "ratio": "5.4:1",
+          "min": "4.5:1",
+          "pass": true
+        }
+      },
+      "dark": {
+        "text": {
+          "ratio": "17.7:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "muted": {
+          "ratio": "8.4:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "accentOnSurface": {
+          "ratio": "10.4:1",
+          "min": "3:1",
+          "pass": true
+        },
+        "onAccent": {
+          "ratio": "10.9:1",
+          "min": "4.5:1",
+          "pass": true
+        }
+      }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro / Roboto",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Mono / Roboto Mono",
+    "css": {
+      "display": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "body": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "numeric": "'SF Mono', 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+    },
+    "scale": 1.2,
+    "sizes": {
+      "display": 34,
+      "title": 26,
+      "headline": 20,
+      "body": 14,
+      "label": 12,
+      "caption": 11
+    },
+    "tracking": {
+      "display": -0.01,
+      "label": 0.06
+    },
+    "lineHeight": {
+      "display": 1.05,
+      "title": 1.15,
+      "headline": 1.25,
+      "body": 1.5,
+      "label": 1.2,
+      "caption": 1.3
+    }
+  },
+  "space": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "small": 0,
+    "medium": 4,
+    "large": 8,
+    "pill": 999
+  },
+  "motion": {
+    "curve": "linear-fast",
+    "easing": "cubic-bezier(0.2, 0, 0, 1)",
+    "fast": 100,
+    "base": 160,
+    "slow": 240
+  },
+  "layout": {
+    "density": "compact",
+    "margin": 16,
+    "gutter": 12,
+    "minTarget": {
+      "ios": 44,
+      "android": 48
+    },
+    "maxContentWidth": 680
+  },
+  "surface": "flat-grid",
+  "shapeFamily": "sharp",
+  "principles": [
+    "Data first; chrome second.",
+    "Alignment is the decoration.",
+    "Every number has a unit, a time, and a comparison.",
+    "Color encodes state, not category."
+  ],
+  "avoid": [
+    "Equal-weight cards for every metric.",
+    "A dashboard with no primary question.",
+    "Green and red as the only signal.",
+    "Decorative gradients behind numbers."
+  ],
+  "signatureMoves": [
+    "A total that updates in place with tabular figures.",
+    "A segmented status rail across the top.",
+    "A measurement grid behind the data.",
+    "A delta marker that sits on the baseline."
+  ],
+  "platform": {
+    "ios": "Use a compact navigation title, not a large title. Use SF Mono for numbers and SF Pro for labels. Put filters in the toolbar. Keep rows at 44pt minimum. Use a tab bar only for peers; otherwise use a segmented control. Keep the system back gesture.",
+    "android": "TopAppBar with title and filter action. Edge-to-edge. Use a compact NavigationBar or rail. No FAB unless there is one dominant create action. Use tabular figures and 48dp rows. Predictive back must work."
+  },
+  "screens": {
+    "home": "One dominant total, a compact delta, a status rail, and rows with aligned columns. The total is the only oversized element.",
+    "detail": "A single position: price, change, position size, cost basis, and a simple chart. Actions sit in the toolbar or at the bottom, not floating.",
+    "compose": "A transaction form: amount first, then account, category, date, and note. Use a numeric keypad, inline validation, and a visible save state.",
+    "profile": "Settings and account: grouped rows, clear labels, no invented achievements. Security and data export are easy to find."
+  },
+  "components": {
+    "button": "Rectangular with a 0-4pt radius. Primary filled with the signal accent; secondary outlined with a 1pt border. Numeric labels use tabular figures.",
+    "list": "Rows with a 1pt bottom rule, 12-16pt vertical padding, aligned numeric columns, no cards.",
+    "input": "Label above, value right-aligned for numbers, unit inside the field. Error text below in the danger color.",
+    "navigation": "Compact title, filter in the toolbar, tab bar or rail for peers. No hamburger."
+  },
+  "content": {
+    "eyebrow": "PORTFOLIO · LIVE",
+    "title": "Net worth",
+    "subtitle": "$128,420.20 · +1.8% today",
+    "items": [
+      {
+        "title": "Vanguard Total Market",
+        "meta": "+1.2% · $84,210.40",
+        "body": "Core index position"
+      },
+      {
+        "title": "Cash reserve",
+        "meta": "0.0% · $28,500.00",
+        "body": "Available to invest"
+      },
+      {
+        "title": "Rent",
+        "meta": "-$1,850.00 · Due Friday",
+        "body": "Scheduled payment"
+      }
+    ],
+    "action": "Review positions",
+    "nav": [
+      "Overview",
+      "Activity",
+      "Plan"
+    ]
+  },
+  "variants": [
+    {
+      "id": "trading-desk",
+      "name": "Trading Desk",
+      "summary": "A live desk: dense rows, tabular numbers, and green/red signals used only for state.",
+      "signature": "A total that updates in place with tabular figures."
+    },
+    {
+      "id": "flight-deck",
+      "name": "Flight Deck",
+      "summary": "A dark cockpit: segmented gauges, uppercase labels, and amber alerts.",
+      "signature": "A segmented status rail across the top."
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "summary": "A clean lab: light grid, precise columns, and blue calibration marks.",
+      "signature": "A measurement grid behind the data."
+    }
+  ],
+  "files": {
+    "Design spec": "DESIGN.md",
+    "Machine-readable design": "design.json",
+    "Design tokens": "tokens.json",
+    "Visual preview": "preview.html",
+    "SwiftUI theme": "ios/Theme.swift",
+    "Compose theme": "android/Theme.kt"
+  }
+}

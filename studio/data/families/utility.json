@@ -1,0 +1,137 @@
+{
+  "id": "utility",
+  "name": "Utility",
+  "thesis": "The app is a well-made tool: immediate, legible, and respectful of the hand using it.",
+  "bestFor": "Everyday tools, weather, files, notes, scanning, home control, settings, and quick tasks.",
+  "keywords": ["utility", "tool", "weather", "files", "notes", "scanner", "reminders", "calculator", "clock", "timer", "home", "settings", "converter", "measure", "flashlight", "shortcut", "widget", "offline"],
+  "feelings": ["direct", "capable", "clear", "honest", "sturdy", "fast", "useful", "unfussy"],
+  "contentTypes": ["mixed", "numeric"],
+  "avoidFor": ["luxury", "nightlife", "editorial publishing", "fashion"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "pocket-tool",
+      "name": "Pocket Tool",
+      "summary": "A single-purpose instrument: one big result, a few large controls, and nothing else.",
+      "signature": "One oversized readout with the controls arranged around it.",
+      "treatment": "One dominant value, large circular or square controls, and a compact history below.",
+      "density": "spacious",
+      "displaySize": 56,
+      "bodySize": 17,
+      "labelCase": "uppercase",
+      "previewClass": "utility-pocket-tool"
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench",
+      "summary": "A tidy workbench: grouped tools, compact rows, and a visible state for everything.",
+      "signature": "A status strip that shows what is on, off, or running.",
+      "treatment": "Grouped tool tiles, compact metadata, strong labels, and a persistent status strip.",
+      "density": "compact",
+      "displaySize": 32,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "utility-workbench"
+    },
+    {
+      "id": "field-manual",
+      "name": "Field Manual",
+      "summary": "A printed manual: numbered sections, diagrams, and hard-working typography.",
+      "signature": "Numbered section tabs in the margin.",
+      "treatment": "Light paper, numbered sections, mono captions, and instructional diagrams.",
+      "density": "comfortable",
+      "displaySize": 34,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "utility-field-manual"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F1F2EF",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#151714",
+      "muted": "#555B55",
+      "border": "#D3D7D2"
+    },
+    "dark": {
+      "background": "#0E100F",
+      "surface": "#171A18",
+      "elevated": "#202421",
+      "text": "#F0F3EE",
+      "muted": "#A5AEA6",
+      "border": "#2C322D"
+    },
+    "accents": [
+      { "id": "safety-orange", "name": "Safety Orange", "light": "#B54A00", "dark": "#FF9A4D", "onLight": "#FFFFFF", "onDark": "#1F0D02" },
+      { "id": "tool-blue", "name": "Tool Blue", "light": "#0B5FA5", "dark": "#7BB8F0", "onLight": "#FFFFFF", "onDark": "#061626" },
+      { "id": "graphite", "name": "Graphite", "light": "#2B3330", "dark": "#CBD5CE", "onLight": "#FFFFFF", "onDark": "#0C100E" },
+      { "id": "hazard-yellow", "name": "Hazard Yellow", "light": "#7A5A00", "dark": "#F5D34A", "onLight": "#FFFFFF", "onDark": "#1D1503" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro Display / Roboto Condensed",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Mono / Roboto Mono",
+    "scale": 1.25,
+    "sizes": { "display": 56, "title": 28, "headline": 21, "body": 17, "label": 12, "caption": 11 },
+    "tracking": { "display": -0.02, "label": 0.08 }
+  },
+  "shape": { "family": "practical", "small": 4, "medium": 10, "large": 16, "pill": 999 },
+  "surface": "flat-controls",
+  "motion": { "curve": "ease-out", "fast": 90, "base": 150, "slow": 240 },
+  "signatureMoves": [
+    "One oversized readout with the controls arranged around it.",
+    "A status strip that shows what is on, off, or running.",
+    "Numbered section tabs in the margin.",
+    "A control that changes shape when it is active."
+  ],
+  "platform": {
+    "ios": "Respect the system navigation bar and back gesture. Use large 44pt targets, SF Symbols with consistent weight, and the system keyboard where possible. Put the primary control within thumb reach. Support Dynamic Type and VoiceOver labels for every control.",
+    "android": "Edge-to-edge with a compact TopAppBar. Use Material Symbols, 48dp targets, and the system number picker or keyboard. Predictive back must work. Use a NavigationBar only for peers; a single screen with a toolbar is often correct."
+  },
+  "principles": [
+    "The result is the interface.",
+    "Every control has one job and one label.",
+    "Speed is a design property.",
+    "Work offline; never lose the user's input."
+  ],
+  "avoid": [
+    "A home screen of nine equal feature tiles.",
+    "An icon with no text label.",
+    "A settings page in place of a primary action.",
+    "Decorative illustration on a tool that must load fast."
+  ],
+  "content": {
+    "eyebrow": "QUICK TOOLS · READY",
+    "title": "Measure",
+    "subtitle": "Point at a surface · 0.0 cm",
+    "items": [
+      { "title": "Level", "meta": "Calibrated · 0.2°", "body": "Surface is nearly flat" },
+      { "title": "Distance", "meta": "2.4 m · Last used", "body": "From the back wall" },
+      { "title": "Convert", "meta": "cm to in · Offline", "body": "Metric and imperial" }
+    ],
+    "action": "Start measuring",
+    "nav": ["Tools", "History", "Settings"]
+  },
+  "screens": {
+    "home": "One current tool with a large readout or primary control, then recent tools below. No marketing hero, no feature grid. The current state is visible without a tap.",
+    "detail": "A tool's working screen: the result, the controls, and a short history. Keep the last value when leaving and returning.",
+    "compose": "A short input flow for a saved item or calculation: label, value, unit, save. Validate inline and keep the keyboard from covering the action.",
+    "profile": "Settings and history: grouped rows, clear on/off state, units, and data export. Nothing hidden behind a puzzle."
+  },
+  "components": {
+    "button": "Large, filled, 8-12pt radius. Icon plus label for any control that is not universally understood.",
+    "list": "Grouped rows with hairline separators, a clear label, a value or switch on the right. No cards for settings.",
+    "input": "Value first, unit inside the field, label above. Use the system numeric keyboard. Show validation next to the field.",
+    "navigation": "Compact title, one primary action in the toolbar, tab bar for two or three peers. No hamburger."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "instrument",
+  "name": "Instrument",
+  "thesis": "The app is a precision instrument: dense information, exact alignment, and no decoration that competes with the data.",
+  "bestFor": "Finance, analytics, operations, engineering, logistics, and productivity.",
+  "keywords": ["finance", "trading", "analytics", "dashboard", "metrics", "monitoring", "operations", "engineering", "data", "terminal", "productivity", "project", "budget", "accounting", "logistics", "infrastructure", "observability", "inventory"],
+  "feelings": ["precise", "dense", "calm", "exact", "serious", "efficient", "technical", "trustworthy"],
+  "contentTypes": ["dense", "numeric"],
+  "avoidFor": ["wellness", "kids", "fashion", "nightlife"],
+  "density": "compact",
+  "variants": [
+    {
+      "id": "trading-desk",
+      "name": "Trading Desk",
+      "summary": "A live desk: dense rows, tabular numbers, and green/red signals used only for state.",
+      "signature": "A total that updates in place with tabular figures.",
+      "treatment": "Condensed display, compact rows, aligned numeric columns, and a persistent status rail.",
+      "density": "compact",
+      "displaySize": 36,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "instrument-trading"
+    },
+    {
+      "id": "flight-deck",
+      "name": "Flight Deck",
+      "summary": "A dark cockpit: segmented gauges, uppercase labels, and amber alerts.",
+      "signature": "A segmented status rail across the top.",
+      "treatment": "Dark-first, mono labels, compact rows, and a single amber warning color.",
+      "density": "compact",
+      "displaySize": 34,
+      "bodySize": 14,
+      "labelCase": "uppercase",
+      "previewClass": "instrument-flight-deck"
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "summary": "A clean lab: light grid, precise columns, and blue calibration marks.",
+      "signature": "A measurement grid behind the data.",
+      "treatment": "Light surfaces, measured spacing, mono data, and blue as the only accent.",
+      "density": "comfortable",
+      "displaySize": 34,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "instrument-laboratory"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F3F4F2",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#111311",
+      "muted": "#555A55",
+      "border": "#D4D8D2"
+    },
+    "dark": {
+      "background": "#0B0D0C",
+      "surface": "#141715",
+      "elevated": "#1C201D",
+      "text": "#F1F5F0",
+      "muted": "#A3ADA4",
+      "border": "#2B322C"
+    },
+    "accents": [
+      { "id": "signal-green", "name": "Signal Green", "light": "#0B7A3B", "dark": "#4ADE80", "onLight": "#FFFFFF", "onDark": "#08130C" },
+      { "id": "amber", "name": "Amber", "light": "#A15C00", "dark": "#FBBF24", "onLight": "#FFFFFF", "onDark": "#1C1304" },
+      { "id": "cyan", "name": "Cyan", "light": "#00677A", "dark": "#67E8F9", "onLight": "#FFFFFF", "onDark": "#06171A" },
+      { "id": "red", "name": "Red", "light": "#B42318", "dark": "#F87171", "onLight": "#FFFFFF", "onDark": "#1C0808" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro Display / Roboto Condensed",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Mono / Roboto Mono",
+    "scale": 1.2,
+    "sizes": { "display": 36, "title": 26, "headline": 20, "body": 15, "label": 12, "caption": 11 },
+    "tracking": { "display": -0.01, "label": 0.06 }
+  },
+  "shape": { "family": "sharp", "small": 0, "medium": 4, "large": 8, "pill": 999 },
+  "surface": "flat-grid",
+  "motion": { "curve": "linear-fast", "fast": 100, "base": 160, "slow": 240 },
+  "signatureMoves": [
+    "A total that updates in place with tabular figures.",
+    "A segmented status rail across the top.",
+    "A measurement grid behind the data.",
+    "A delta marker that sits on the baseline."
+  ],
+  "platform": {
+    "ios": "Use a compact navigation title, not a large title. Use SF Mono for numbers and SF Pro for labels. Put filters in the toolbar. Keep rows at 44pt minimum. Use a tab bar only for peers; otherwise use a segmented control. Keep the system back gesture.",
+    "android": "TopAppBar with title and filter action. Edge-to-edge. Use a compact NavigationBar or rail. No FAB unless there is one dominant create action. Use tabular figures and 48dp rows. Predictive back must work."
+  },
+  "principles": [
+    "Data first; chrome second.",
+    "Alignment is the decoration.",
+    "Every number has a unit, a time, and a comparison.",
+    "Color encodes state, not category."
+  ],
+  "avoid": [
+    "Equal-weight cards for every metric.",
+    "A dashboard with no primary question.",
+    "Green and red as the only signal.",
+    "Decorative gradients behind numbers."
+  ],
+  "content": {
+    "eyebrow": "PORTFOLIO · LIVE",
+    "title": "Net worth",
+    "subtitle": "$128,420.20 · +1.8% today",
+    "items": [
+      { "title": "Vanguard Total Market", "meta": "+1.2% · $84,210.40", "body": "Core index position" },
+      { "title": "Cash reserve", "meta": "0.0% · $28,500.00", "body": "Available to invest" },
+      { "title": "Rent", "meta": "-$1,850.00 · Due Friday", "body": "Scheduled payment" }
+    ],
+    "action": "Review positions",
+    "nav": ["Overview", "Activity", "Plan"]
+  },
+  "screens": {
+    "home": "One dominant total, a compact delta, a status rail, and rows with aligned columns. The total is the only oversized element.",
+    "detail": "A single position: price, change, position size, cost basis, and a simple chart. Actions sit in the toolbar or at the bottom, not floating.",
+    "compose": "A transaction form: amount first, then account, category, date, and note. Use a numeric keypad, inline validation, and a visible save state.",
+    "profile": "Settings and account: grouped rows, clear labels, no invented achievements. Security and data export are easy to find."
+  },
+  "components": {
+    "button": "Rectangular with a 0-4pt radius. Primary filled with the signal accent; secondary outlined with a 1pt border. Numeric labels use tabular figures.",
+    "list": "Rows with a 1pt bottom rule, 12-16pt vertical padding, aligned numeric columns, no cards.",
+    "input": "Label above, value right-aligned for numbers, unit inside the field. Error text below in the danger color.",
+    "navigation": "Compact title, filter in the toolbar, tab bar or rail for peers. No hamburger."
+  }
+}

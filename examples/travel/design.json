@@ -1,0 +1,295 @@
+{
+  "studio": "0.2.0",
+  "app": {
+    "name": "North",
+    "slug": "north",
+    "brief": "A local guide for hiking trails, maps, and nearby places. Warm, outdoors, calm, route-first."
+  },
+  "direction": {
+    "family": "spatial",
+    "familyName": "Spatial",
+    "variant": "trail-map",
+    "variantName": "Trail Map",
+    "accent": "trail",
+    "accentName": "Trail Orange",
+    "mode": "light",
+    "seed": "a local guide for hiking trails maps and nearby places warm outdoors calm route first north",
+    "confidence": "high"
+  },
+  "thesis": "The app is a place: location, movement, and layers give the screen its structure.",
+  "summary": "A topographic field guide: earthy layers, route lines, and elevation labels.",
+  "signature": "A route line that connects cards.",
+  "treatment": "Earthy palette, contour-like rules, distance labels, and layered place cards.",
+  "why": {
+    "signals": [
+      "maps",
+      "local",
+      "places",
+      "hiking",
+      "outdoors",
+      "guide",
+      "route",
+      "trail",
+      "map",
+      "nearby"
+    ],
+    "tones": [
+      "quiet",
+      "warm",
+      "natural"
+    ],
+    "alternatives": [
+      {
+        "id": "organic",
+        "name": "Organic",
+        "score": 4.25,
+        "matched": [
+          "outdoors",
+          "calm"
+        ]
+      },
+      {
+        "id": "ritual",
+        "name": "Ritual",
+        "score": 2,
+        "matched": [
+          "calm"
+        ]
+      }
+    ],
+    "note": "The brief strongly matches Spatial. The layout, type, and surface decisions come from that family rather than from a generic template."
+  },
+  "palette": {
+    "light": {
+      "background": "#EEF3EC",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#1A2420",
+      "muted": "#57645D",
+      "border": "#D2DDD4",
+      "accent": "#B24A18",
+      "onAccent": "#FFFFFF",
+      "success": "#1F6B45",
+      "warning": "#8A5A00",
+      "danger": "#A61B2B"
+    },
+    "dark": {
+      "background": "#0F1512",
+      "surface": "#17201B",
+      "elevated": "#1F2B24",
+      "text": "#EEF5EF",
+      "muted": "#A5B5AA",
+      "border": "#2C3B32",
+      "accent": "#FF9A62",
+      "onAccent": "#1E0D05",
+      "success": "#7BC4A0",
+      "warning": "#E0B05A",
+      "danger": "#FF8A8A"
+    },
+    "contrast": {
+      "light": {
+        "text": {
+          "ratio": "14.2:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "muted": {
+          "ratio": "5.5:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "accentOnSurface": {
+          "ratio": "5.4:1",
+          "min": "3:1",
+          "pass": true
+        },
+        "onAccent": {
+          "ratio": "5.4:1",
+          "min": "4.5:1",
+          "pass": true
+        }
+      },
+      "dark": {
+        "text": {
+          "ratio": "16.7:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "muted": {
+          "ratio": "8.6:1",
+          "min": "4.5:1",
+          "pass": true
+        },
+        "accentOnSurface": {
+          "ratio": "8.0:1",
+          "min": "3:1",
+          "pass": true
+        },
+        "onAccent": {
+          "ratio": "9.0:1",
+          "min": "4.5:1",
+          "pass": true
+        }
+      }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro / Roboto",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Mono / Roboto Mono",
+    "css": {
+      "display": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "body": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "numeric": "'SF Mono', 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace"
+    },
+    "scale": 1.25,
+    "sizes": {
+      "display": 36,
+      "title": 28,
+      "headline": 21,
+      "body": 16,
+      "label": 13,
+      "caption": 12
+    },
+    "tracking": {
+      "display": -0.02,
+      "label": 0.06
+    },
+    "lineHeight": {
+      "display": 1.05,
+      "title": 1.15,
+      "headline": 1.25,
+      "body": 1.5,
+      "label": 1.2,
+      "caption": 1.3
+    }
+  },
+  "space": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "small": 8,
+    "medium": 16,
+    "large": 24,
+    "pill": 999
+  },
+  "motion": {
+    "curve": "ease-out",
+    "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "fast": 160,
+    "base": 240,
+    "slow": 360
+  },
+  "layout": {
+    "density": "comfortable",
+    "margin": 20,
+    "gutter": 16,
+    "minTarget": {
+      "ios": 44,
+      "android": 48
+    },
+    "maxContentWidth": 680
+  },
+  "surface": "layered",
+  "shapeFamily": "organic",
+  "principles": [
+    "Place first; list second.",
+    "One floating control layer, not five.",
+    "Use real geography or real spatial hierarchy.",
+    "Cards are annotations, not the page."
+  ],
+  "avoid": [
+    "A map with a generic grid of cards over it.",
+    "A floating action button with no spatial job.",
+    "Decorative contour lines that do not encode data.",
+    "A list that ignores location."
+  ],
+  "signatureMoves": [
+    "A route line that connects cards.",
+    "A vertical district label in the margin.",
+    "A floating command bar that follows the canvas.",
+    "A map pin that expands into a place card."
+  ],
+  "platform": {
+    "ios": "Use a full-bleed map or canvas under a floating search field. Use a bottom sheet with detents for place details. Keep the system back gesture. Use SF Symbols and a tab bar for peers.",
+    "android": "Edge-to-edge map or canvas with a floating search bar. Use a bottom sheet for details. Predictive back. Use a NavigationBar or rail; no FAB unless it creates a place."
+  },
+  "screens": {
+    "home": "A map or spatial canvas occupies the top two-thirds, with one floating search/control bar and a bottom sheet preview of the nearest place. The list is an annotation, not a wall of cards.",
+    "detail": "A place detail: hero image or map, name, distance, one key fact, and actions (directions, save, share). Keep the back gesture and the map position.",
+    "compose": "A route or place creation flow: search, drop a pin, name it, add a note, save. Show the pin on a map before committing.",
+    "profile": "A personal atlas: saved places, routes, and trips. Use a map or spatial index, not a generic settings list."
+  },
+  "components": {
+    "button": "Rounded 16-24pt, but only for floating controls and primary actions. List rows stay flat.",
+    "list": "Place rows with a small map thumbnail or distance marker, a bold name, and one metadata line. No heavy cards.",
+    "input": "Search field floats over the map with a clear action and recent searches.",
+    "navigation": "Floating search, bottom sheet, tab bar or rail. Keep the system back gesture."
+  },
+  "content": {
+    "eyebrow": "NEAR YOU · 6 TRAILS",
+    "title": "The north ridge",
+    "subtitle": "6 trails · 2.4 km from here",
+    "items": [
+      {
+        "title": "Ridge Loop",
+        "meta": "4.2 km · Moderate",
+        "body": "Open ridgeline with three viewpoints"
+      },
+      {
+        "title": "Cedar Falls",
+        "meta": "2.8 km · Easy",
+        "body": "Shaded path to a seasonal waterfall"
+      },
+      {
+        "title": "Summit Spur",
+        "meta": "6.1 km · Hard",
+        "body": "Steep climb, exposed at the top"
+      }
+    ],
+    "action": "Open the map",
+    "nav": [
+      "Explore",
+      "Routes",
+      "Saved"
+    ]
+  },
+  "variants": [
+    {
+      "id": "trail-map",
+      "name": "Trail Map",
+      "summary": "A topographic field guide: earthy layers, route lines, and elevation labels.",
+      "signature": "A route line that connects cards."
+    },
+    {
+      "id": "city-guide",
+      "name": "City Guide",
+      "summary": "A bold city index: grid neighborhoods, oversized labels, and photo cards.",
+      "signature": "A vertical district label in the margin."
+    },
+    {
+      "id": "studio-canvas",
+      "name": "Studio Canvas",
+      "summary": "A light canvas: floating tools, soft panels, and spatial hierarchy.",
+      "signature": "A floating command bar that follows the canvas."
+    }
+  ],
+  "files": {
+    "Design spec": "DESIGN.md",
+    "Machine-readable design": "design.json",
+    "Design tokens": "tokens.json",
+    "Visual preview": "preview.html",
+    "SwiftUI theme": "ios/Theme.swift",
+    "Compose theme": "android/Theme.kt"
+  }
+}

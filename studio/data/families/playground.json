@@ -1,0 +1,137 @@
+{
+  "id": "playground",
+  "name": "Playground",
+  "thesis": "The app is a playground: shape, color, and motion carry personality, but the next action is never ambiguous.",
+  "bestFor": "Social, community, creative tools, kids, games, and hobby apps.",
+  "keywords": ["social", "community", "creative", "kids", "child", "toddler", "games", "fun", "stickers", "photos", "memes", "friends", "dating", "events", "music", "art", "hobby", "club", "crew"],
+  "feelings": ["playful", "friendly", "bold", "expressive", "energetic", "irreverent", "warm", "social"],
+  "contentTypes": ["visual", "mixed"],
+  "avoidFor": ["banking", "legal", "medical", "trading"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "toy-box",
+      "name": "Toy Box",
+      "summary": "A bright toy box: chunky blocks, primary colors, and big actions.",
+      "signature": "A sticker that peels up on tap.",
+      "treatment": "Large color blocks, chunky controls, rounded display type, and a generous layout.",
+      "density": "spacious",
+      "displaySize": 40,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "playground-toy-box"
+    },
+    {
+      "id": "sticker-album",
+      "name": "Sticker Album",
+      "summary": "A scrapbook: rotated cards, tape, and handwritten labels.",
+      "signature": "A rotated photo card with a tape strip.",
+      "treatment": "Layered cards, slight rotations, paper texture, and a dense collage rhythm.",
+      "density": "compact",
+      "displaySize": 34,
+      "bodySize": 15,
+      "labelCase": "mixed",
+      "previewClass": "playground-sticker-album"
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "summary": "A neon arcade: dark background, pixel accents, and high-score energy.",
+      "signature": "A scoreboard header.",
+      "treatment": "Dark surfaces, a single neon accent, condensed type, and a compact vertical list.",
+      "density": "compact",
+      "displaySize": 38,
+      "bodySize": 14,
+      "labelCase": "uppercase",
+      "previewClass": "playground-arcade"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#FFF8E7",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#1C1A17",
+      "muted": "#625C52",
+      "border": "#E8DCC6"
+    },
+    "dark": {
+      "background": "#121016",
+      "surface": "#1B1821",
+      "elevated": "#24202B",
+      "text": "#F7F2E8",
+      "muted": "#B8AFC0",
+      "border": "#342E3D"
+    },
+    "accents": [
+      { "id": "coral", "name": "Coral", "light": "#D9362B", "dark": "#FF7A6B", "onLight": "#FFFFFF", "onDark": "#210604" },
+      { "id": "cobalt", "name": "Cobalt", "light": "#1D4ED8", "dark": "#7DA2FF", "onLight": "#FFFFFF", "onDark": "#08122A" },
+      { "id": "lime", "name": "Lime", "light": "#4D7C0F", "dark": "#BEF264", "onLight": "#FFFFFF", "onDark": "#111A05" },
+      { "id": "violet", "name": "Violet", "light": "#6D28D9", "dark": "#C4B5FD", "onLight": "#FFFFFF", "onDark": "#140A24" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "rounded",
+    "body": "rounded",
+    "numeric": "rounded",
+    "displayFamily": "SF Rounded / Roboto",
+    "bodyFamily": "SF Rounded / Roboto",
+    "numericFamily": "SF Rounded / Roboto",
+    "scale": 1.414,
+    "sizes": { "display": 44, "title": 30, "headline": 22, "body": 16, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.02, "label": 0.04 }
+  },
+  "shape": { "family": "chunky", "small": 8, "medium": 16, "large": 24, "pill": 999 },
+  "surface": "color-blocks",
+  "motion": { "curve": "spring", "fast": 180, "base": 280, "slow": 420 },
+  "signatureMoves": [
+    "A sticker that peels up on tap.",
+    "A rotated photo card with a tape strip.",
+    "A scoreboard header.",
+    "A color block that changes the mood of the screen."
+  ],
+  "platform": {
+    "ios": "Use SF Rounded and SF Symbols. Keep the system back gesture. Use a tab bar for peers and sheets for quick actions. Spring only on direct manipulation. Respect reduce motion.",
+    "android": "Use Roboto with rounded shapes and Material Symbols. Edge-to-edge. Use a NavigationBar for three to five peers, or a FAB menu for 2-6 related create actions. Respect the system animation scale."
+  },
+  "principles": [
+    "One loud shape per screen.",
+    "Color blocks are structure, not wallpaper.",
+    "Motion is a reaction, not a loop.",
+    "The primary action is still obvious."
+  ],
+  "avoid": [
+    "Every card rotated and every button pill-shaped.",
+    "Confetti on launch.",
+    "A gradient behind text with no contrast check.",
+    "Five equal tabs because the template had five."
+  ],
+  "content": {
+    "eyebrow": "YOUR CREW · 6 ONLINE",
+    "title": "Saturday plans",
+    "subtitle": "6 friends in · 2 ideas",
+    "items": [
+      { "title": "Rooftop drawing", "meta": "18:00 · 4 going", "body": "Bring a notebook and a jacket" },
+      { "title": "Night market", "meta": "20:30 · 3 going", "body": "Meet by the east gate" },
+      { "title": "Arcade hour", "meta": "22:00 · 2 going", "body": "High score is still Sam's" }
+    ],
+    "action": "Start a plan",
+    "nav": ["Crew", "Plans", "You"]
+  },
+  "screens": {
+    "home": "A playful composition of one large color block, a crew strip, and two or three plan cards with real times. The primary action is a chunky button or FAB, not a hidden gesture.",
+    "detail": "A plan detail: who is going, when, where, what to bring, and one join/leave action. Use avatars or initials, not fake testimonial photos.",
+    "compose": "A quick plan composer: what, when, where, who. Keep it to one screen with large controls and a visible create state.",
+    "profile": "A playful profile: avatar, crew, recent plans, and a few real stats. No invented follower counts."
+  },
+  "components": {
+    "button": "Chunky 12-20pt radius, bold label, high contrast. Pills only for tags and filters.",
+    "list": "Color-block cards with 16-24pt radius and one clear action. Do not put a card inside a card.",
+    "input": "Large, friendly fields with clear labels and a visible focus state.",
+    "navigation": "Tab bar with three to five peers, or a FAB menu for related create actions. Do not mix both."
+  }
+}

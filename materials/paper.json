@@ -1,0 +1,28 @@
+{
+  "id": "paper",
+  "name": "Paper",
+  "character": "Editorial and unhurried. Type does the work; surfaces stay flat.",
+  "keywords": ["editorial", "writing", "reading", "journal", "publishing", "news", "calm", "literary", "notes", "book"],
+  "colors": {
+    "light": {
+      "surface": "#FAF8F3",
+      "onSurface": "#1A1A18",
+      "muted": "#5F5A52",
+      "accent": "#8C2F1B",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#141412",
+      "onSurface": "#F2EFE7",
+      "muted": "#A8A296",
+      "accent": "#E0715A",
+      "onAccent": "#1A1A18"
+    }
+  },
+  "type": { "display": "serif", "body": "sans", "numeric": "proportional" },
+  "shape": { "family": "square", "small": 2, "medium": 6, "large": 10 },
+  "surface": "border-first",
+  "motion": { "curve": "ease-out-soft", "fast": 140, "base": 220, "slow": 340 },
+  "density": "comfortable",
+  "signature": "Hairline rules and a serif display face; shadows only for overlays."
+}

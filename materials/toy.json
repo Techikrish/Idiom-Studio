@@ -1,0 +1,28 @@
+{
+  "id": "toy",
+  "name": "Toy",
+  "character": "Playful and physical. Motion and shape carry personality.",
+  "keywords": ["kids", "game", "social", "music", "fitness", "fun", "creative", "community", "playful", "education"],
+  "colors": {
+    "light": {
+      "surface": "#FFF8ED",
+      "onSurface": "#201A14",
+      "muted": "#6B6259",
+      "accent": "#A21CAF",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#17120D",
+      "onSurface": "#FFF4E6",
+      "muted": "#B3A79A",
+      "accent": "#F0ABFC",
+      "onAccent": "#17120D"
+    }
+  },
+  "type": { "display": "rounded", "body": "rounded", "numeric": "tabular" },
+  "shape": { "family": "chunky", "small": 12, "medium": 20, "large": 28 },
+  "surface": "filled",
+  "motion": { "curve": "spring-soft", "fast": 180, "base": 260, "slow": 400 },
+  "density": "comfortable",
+  "signature": "Chunky shape steps and one spring motion, never both at once."
+}

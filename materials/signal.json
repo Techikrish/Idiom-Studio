@@ -1,0 +1,28 @@
+{
+  "id": "signal",
+  "name": "Signal",
+  "character": "Direct and high-contrast. One accent carries the hierarchy.",
+  "keywords": ["developer", "security", "crypto", "infrastructure", "cli", "monitoring", "status", "technical", "fintech", "dark"],
+  "colors": {
+    "light": {
+      "surface": "#F6F7F9",
+      "onSurface": "#0B0D10",
+      "muted": "#5B616B",
+      "accent": "#C2410C",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#08090B",
+      "onSurface": "#F3F5F7",
+      "muted": "#9BA3AD",
+      "accent": "#FF7A45",
+      "onAccent": "#08090B"
+    }
+  },
+  "type": { "display": "sans", "body": "sans", "numeric": "tabular" },
+  "shape": { "family": "sharp", "small": 2, "medium": 6, "large": 12 },
+  "surface": "flat",
+  "motion": { "curve": "ease-out", "fast": 120, "base": 180, "slow": 280 },
+  "density": "compact",
+  "signature": "Dark-first, a single ember accent, and no decorative gradients."
+}

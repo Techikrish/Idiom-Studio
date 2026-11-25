@@ -1,0 +1,137 @@
+{
+  "id": "editorial",
+  "name": "Editorial",
+  "thesis": "The app should read like a publication: one clear voice, strong hierarchy, and room for the content to breathe.",
+  "bestFor": "Reading, writing, news, research, journals, and newsletters.",
+  "keywords": ["news", "writing", "reading", "journal", "publishing", "magazine", "book", "notes", "story", "essay", "culture", "literature", "blog", "newsletter", "documentation", "research"],
+  "feelings": ["calm", "considered", "literary", "curious", "intellectual", "reflective", "honest", "timeless"],
+  "contentTypes": ["text", "mixed"],
+  "avoidFor": ["trading", "arcade", "fast delivery", "real-time monitoring"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "broadsheet",
+      "name": "Broadsheet",
+      "summary": "A confident front page: oversized masthead, an asymmetric lead story, and a tight news list.",
+      "signature": "A hairline rule that runs past the content margin.",
+      "treatment": "Oversized serif masthead, uppercase kickers, a two-column lead, and a dense but orderly list.",
+      "density": "comfortable",
+      "displaySize": 48,
+      "bodySize": 17,
+      "labelCase": "uppercase",
+      "previewClass": "editorial-broadsheet"
+    },
+    {
+      "id": "field-notes",
+      "name": "Field Notes",
+      "summary": "A working notebook: ruled lines, mono labels, compact entries, and a sense of use.",
+      "signature": "A ruled margin with numbered sections.",
+      "treatment": "Smaller serif display, mono metadata, ruled separators, and a compact rhythm.",
+      "density": "compact",
+      "displaySize": 34,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "editorial-field-notes"
+    },
+    {
+      "id": "literary-journal",
+      "name": "Literary Journal",
+      "summary": "A quiet journal: centered serif, generous leading, and a single pull quote.",
+      "signature": "A drop cap on the opening paragraph.",
+      "treatment": "Centered composition, large serif display, wide leading, and very few rules.",
+      "density": "spacious",
+      "displaySize": 42,
+      "bodySize": 18,
+      "labelCase": "small-caps",
+      "previewClass": "editorial-literary"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F7F3EA",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFDF8",
+      "text": "#171512",
+      "muted": "#5E5850",
+      "border": "#D9D2C4"
+    },
+    "dark": {
+      "background": "#141210",
+      "surface": "#1D1A17",
+      "elevated": "#26221E",
+      "text": "#F4EFE6",
+      "muted": "#B8B0A4",
+      "border": "#3A342D"
+    },
+    "accents": [
+      { "id": "oxblood", "name": "Oxblood", "light": "#9B2C1F", "dark": "#E37A5F", "onLight": "#FFFFFF", "onDark": "#1A1512" },
+      { "id": "forest", "name": "Forest", "light": "#2F5D46", "dark": "#7BC4A0", "onLight": "#FFFFFF", "onDark": "#101A14" },
+      { "id": "navy", "name": "Navy", "light": "#1F3A5F", "dark": "#8BB8E8", "onLight": "#FFFFFF", "onDark": "#0C1520" },
+      { "id": "mustard", "name": "Mustard", "light": "#7A5A00", "dark": "#E0B05A", "onLight": "#FFFFFF", "onDark": "#1D1608" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "serif",
+    "body": "sans",
+    "numeric": "proportional",
+    "displayFamily": "New York / Noto Serif",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.333,
+    "sizes": { "display": 44, "title": 30, "headline": 22, "body": 17, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.02, "label": 0.08 }
+  },
+  "shape": { "family": "square", "small": 2, "medium": 6, "large": 12, "pill": 999 },
+  "surface": "border-first",
+  "motion": { "curve": "ease-out-soft", "fast": 140, "base": 220, "slow": 340 },
+  "signatureMoves": [
+    "A hairline rule that runs past the content margin.",
+    "A drop cap on the first paragraph.",
+    "A section number set in the margin.",
+    "An oversized pull quote that breaks the column."
+  ],
+  "platform": {
+    "ios": "NavigationStack with a large title. Use a serif display face for the masthead and SF Pro for body and metadata. Keep the system back button and swipe-back. Put one secondary action in the toolbar. Use a tab bar only when three destinations are true peers. Sheets use medium and large detents.",
+    "android": "TopAppBar with a small title after scroll and an edge-to-edge list. Use Noto Serif for display and Roboto for body. Consume insets. Use a NavigationBar only for three to five peers; otherwise use a rail. Do not add a FAB. Ripple belongs to rows, not to the whole card."
+  },
+  "principles": [
+    "One lead story per screen. Everything else is secondary.",
+    "Type and rules carry hierarchy; shadows are for overlays only.",
+    "Margins are part of the composition, not leftover space.",
+    "Real headlines and real bylines, never lorem ipsum."
+  ],
+  "avoid": [
+    "A grid of identical cards with equal visual weight.",
+    "A hero image with a gradient overlay and no editorial reason.",
+    "Centered body text wider than 75 characters.",
+    "Decorative serif used for dense data."
+  ],
+  "content": {
+    "eyebrow": "FIELD NOTES · NO. 04",
+    "title": "The quiet infrastructure of everyday life",
+    "subtitle": "A weekly dispatch on the systems we stop noticing.",
+    "items": [
+      { "title": "The last mile is a design problem", "meta": "ESSAY · 8 MIN", "body": "Why the final ten metres decide whether a city feels close or far." },
+      { "title": "A small history of the receipt", "meta": "ARCHIVE · 5 MIN", "body": "Paper, proof, and the ritual of being able to return something." },
+      { "title": "What a library knows", "meta": "INTERVIEW · 12 MIN", "body": "A branch librarian on catalogues, quiet, and public trust." }
+    ],
+    "action": "Read the issue",
+    "nav": ["Today", "Archive", "Saved"]
+  },
+  "screens": {
+    "home": "Masthead, issue metadata, one lead story with a two-column headline, then a tight list of secondary stories. The lead is twice the visual weight of any other item.",
+    "detail": "A 60-70 character measure, a serif headline, a byline and date, one pull quote, and related stories below a rule. Keep the reading position when returning.",
+    "compose": "A writing desk: title field, body editor, byline, a visible draft state, and one publish action. The keyboard must not cover the publish control.",
+    "profile": "A contributor page: portrait, short bio, a list of pieces, and one follow action. Do not use a dashboard of invented statistics."
+  },
+  "components": {
+    "button": "Rectangular with a 2pt radius. Solid ink fill for the primary action; underline or text for secondary actions. No pills.",
+    "list": "Hairline rules, 20pt vertical rhythm, no cards. Metadata sits above the title in uppercase 11-13pt with 0.08em tracking.",
+    "input": "Underline only, label above, helper text below. No rounded box, no floating label.",
+    "navigation": "iOS: large title plus tab bar for peers. Android: top app bar plus navigation bar or rail. The title is the strongest element in the chrome."
+  }
+}

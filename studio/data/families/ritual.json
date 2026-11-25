@@ -1,0 +1,136 @@
+{
+  "id": "ritual",
+  "name": "Ritual",
+  "thesis": "The app is a ritual: one clear sequence, a calm pace, and visible progress without pressure.",
+  "bestFor": "Health, wellness, habits, fitness, journaling, sleep, and recovery.",
+  "keywords": ["health", "fitness", "habit", "meditation", "sleep", "journaling", "wellness", "therapy", "training", "nutrition", "routine", "mindfulness", "recovery", "care", "breathing", "mood"],
+  "feelings": ["calm", "gentle", "supportive", "focused", "restorative", "intimate", "disciplined", "safe"],
+  "contentTypes": ["sparse", "mixed"],
+  "avoidFor": ["trading", "arcade", "fast delivery", "nightlife"],
+  "density": "spacious",
+  "variants": [
+    {
+      "id": "morning-pages",
+      "name": "Morning Pages",
+      "summary": "A soft morning ritual: centered prompt, warm paper, one action.",
+      "signature": "A breathing ring that fills with the day.",
+      "treatment": "Warm paper, centered serif, a single progress ring, and generous space.",
+      "density": "spacious",
+      "displaySize": 34,
+      "bodySize": 17,
+      "labelCase": "small-caps",
+      "previewClass": "ritual-morning-pages"
+    },
+    {
+      "id": "training-log",
+      "name": "Training Log",
+      "summary": "A disciplined training log: progress bars, split times, and a clear next set.",
+      "signature": "A progress bar segmented by week.",
+      "treatment": "Structured rows, split times, segmented progress, and a direct next action.",
+      "density": "compact",
+      "displaySize": 32,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "ritual-training-log"
+    },
+    {
+      "id": "meditation-timer",
+      "name": "Meditation Timer",
+      "summary": "A dark sanctuary: a breathing circle, minimal text, and slow motion.",
+      "signature": "A slow-breathing orb.",
+      "treatment": "Near-black surfaces, a single soft accent, a large circular timer, and almost no chrome.",
+      "density": "spacious",
+      "displaySize": 30,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "ritual-meditation"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#FAF6F0",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#2A211B",
+      "muted": "#6B5D53",
+      "border": "#E3D8CC"
+    },
+    "dark": {
+      "background": "#14100E",
+      "surface": "#1D1815",
+      "elevated": "#27211D",
+      "text": "#F6EEE6",
+      "muted": "#BCAA9C",
+      "border": "#3A302A"
+    },
+    "accents": [
+      { "id": "sage", "name": "Sage", "light": "#4F6B52", "dark": "#A8C9A8", "onLight": "#FFFFFF", "onDark": "#0C150D" },
+      { "id": "clay", "name": "Clay", "light": "#A6533A", "dark": "#F0A088", "onLight": "#FFFFFF", "onDark": "#1E0B06" },
+      { "id": "lavender", "name": "Lavender", "light": "#63527A", "dark": "#C4B0E0", "onLight": "#FFFFFF", "onDark": "#120D18" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "serif",
+    "body": "sans",
+    "numeric": "proportional",
+    "displayFamily": "New York / Noto Serif",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.2,
+    "sizes": { "display": 34, "title": 26, "headline": 20, "body": 17, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.01, "label": 0.04 }
+  },
+  "shape": { "family": "soft", "small": 12, "medium": 20, "large": 28, "pill": 999 },
+  "surface": "soft-fill",
+  "motion": { "curve": "ease-in-out", "fast": 220, "base": 360, "slow": 520 },
+  "signatureMoves": [
+    "A breathing ring that fills with the day.",
+    "A progress bar segmented by week.",
+    "A slow-breathing orb.",
+    "A single handwritten note in the margin."
+  ],
+  "platform": {
+    "ios": "Use a large title but keep the chrome quiet. Prefer a single primary action and a tab bar for two or three peers. Use sheets for check-ins. Respect reduce motion and Dynamic Type. Haptics only on completion.",
+    "android": "Edge-to-edge with a soft surface and a compact top app bar. Use a NavigationBar for two or three peers. Respect the system animation scale. Use 48dp targets and generous spacing."
+  },
+  "principles": [
+    "One sequence per screen.",
+    "Progress is visible, not gamified.",
+    "Calm does not mean low contrast.",
+    "The next action is always obvious."
+  ],
+  "avoid": [
+    "A dashboard of rings and invented streaks.",
+    "Confetti for a basic habit.",
+    "Tiny gray text that disappears in sunlight.",
+    "A paywall before the first useful session."
+  ],
+  "content": {
+    "eyebrow": "DAY 12 · MORNING",
+    "title": "A quieter start",
+    "subtitle": "8 min · breath, stretch, write",
+    "items": [
+      { "title": "Breathe", "meta": "3 min · Ready", "body": "Box breathing, eyes closed" },
+      { "title": "Stretch", "meta": "4 min · Next", "body": "Neck, shoulders, hips" },
+      { "title": "One line", "meta": "1 min · After", "body": "What is worth noticing today?" }
+    ],
+    "action": "Begin",
+    "nav": ["Today", "Practice", "You"]
+  },
+  "screens": {
+    "home": "A centered daily ritual: one prompt, one progress indicator, and one primary action. Secondary practices sit below a rule.",
+    "detail": "A practice detail: what it is, how long, what you need, and one start action. Show the real duration.",
+    "compose": "A check-in or journal entry: one prompt, a generous text area, a mood control, and a save action that preserves the draft.",
+    "profile": "A calm history: current streak, recent sessions, and settings. No fake social comparison."
+  },
+  "components": {
+    "button": "Large, soft, filled with the accent; secondary actions are text or outlined. Minimum 48dp/44pt.",
+    "list": "Soft rows or cards with 20-28pt radius, no hard shadows. Use whitespace and a subtle tonal fill.",
+    "input": "Comfortable line height, visible label, gentle validation, no aggressive red until submit.",
+    "navigation": "Quiet top bar, two or three tabs, sheets for check-ins."
+  }
+}

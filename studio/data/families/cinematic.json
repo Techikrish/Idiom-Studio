@@ -1,0 +1,136 @@
+{
+  "id": "cinematic",
+  "name": "Cinematic",
+  "thesis": "The app is a stage: image, atmosphere, and timing do the work; the interface stays out of the frame.",
+  "bestFor": "Film, music, events, nightlife, streaming, photography, and culture.",
+  "keywords": ["film", "music", "events", "nightlife", "streaming", "video", "photography", "gallery", "festival", "entertainment", "tickets", "concerts", "stories", "cinema", "series", "live"],
+  "feelings": ["dramatic", "immersive", "bold", "electric", "cool", "memorable", "atmospheric", "cultural"],
+  "contentTypes": ["visual", "mixed"],
+  "avoidFor": ["utilities", "banking", "forms", "dense data"],
+  "density": "spacious",
+  "variants": [
+    {
+      "id": "film-festival",
+      "name": "Film Festival",
+      "summary": "A poster wall: full-bleed key art, oversized titles, and minimal chrome.",
+      "signature": "A title that bleeds into the image.",
+      "treatment": "Full-bleed imagery, oversized display type, dark chrome, and a horizontal line-up.",
+      "density": "spacious",
+      "displaySize": 52,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "cinematic-film-festival"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "summary": "A white cube: large images, quiet labels, and a lot of air.",
+      "signature": "A caption set in the margin, not under the image.",
+      "treatment": "Light surfaces, a serif display face, measured captions, and very little chrome.",
+      "density": "spacious",
+      "displaySize": 38,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "cinematic-gallery"
+    },
+    {
+      "id": "nightclub",
+      "name": "Nightclub",
+      "summary": "A dark stage: one neon accent, a stacked line-up, and high contrast.",
+      "signature": "A glowing time marker.",
+      "treatment": "Near-black background, a single electric accent, condensed type, and a tight vertical line-up.",
+      "density": "compact",
+      "displaySize": 44,
+      "bodySize": 14,
+      "labelCase": "uppercase",
+      "previewClass": "cinematic-nightclub"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F5F2EC",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#121212",
+      "muted": "#5C5C5C",
+      "border": "#DDD8CE"
+    },
+    "dark": {
+      "background": "#080808",
+      "surface": "#121212",
+      "elevated": "#1A1A1A",
+      "text": "#F5F5F0",
+      "muted": "#A8A8A0",
+      "border": "#2A2A2A"
+    },
+    "accents": [
+      { "id": "gold", "name": "Gold", "light": "#8A6A1F", "dark": "#E8C36A", "onLight": "#FFFFFF", "onDark": "#1A1408" },
+      { "id": "electric", "name": "Electric Blue", "light": "#1D4ED8", "dark": "#7DA2FF", "onLight": "#FFFFFF", "onDark": "#08122A" },
+      { "id": "crimson", "name": "Crimson", "light": "#A61B2B", "dark": "#FF7A8A", "onLight": "#FFFFFF", "onDark": "#22080C" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "proportional",
+    "displayFamily": "SF Pro Display / Roboto",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.5,
+    "sizes": { "display": 52, "title": 34, "headline": 24, "body": 16, "label": 12, "caption": 11 },
+    "tracking": { "display": -0.03, "label": 0.12 }
+  },
+  "shape": { "family": "soft", "small": 4, "medium": 10, "large": 18, "pill": 999 },
+  "surface": "image-led",
+  "motion": { "curve": "ease-in-out", "fast": 180, "base": 280, "slow": 420 },
+  "signatureMoves": [
+    "A title that bleeds into the image.",
+    "A caption set in the margin, not under the image.",
+    "A glowing time marker.",
+    "A full-bleed image that changes with the scroll."
+  ],
+  "platform": {
+    "ios": "Use a full-bleed hero under the status bar with a scrim only where text sits. Keep the system back button. Use a transparent navigation bar that becomes opaque on scroll. Sheets for details. Tab bar for peers.",
+    "android": "Edge-to-edge with a transparent top app bar and a scrim. Predictive back. Use a bottom sheet for details. No FAB. Keep the system bars legible over imagery."
+  },
+  "principles": [
+    "One image, one title, one time.",
+    "Chrome disappears until needed.",
+    "Text over media needs a measured scrim.",
+    "Motion is a cut or a fade, not a bounce."
+  ],
+  "avoid": [
+    "A grid of equal cards over a hero image.",
+    "Neon gradients with no content reason.",
+    "Autoplay video with sound.",
+    "A play button on media that does not play."
+  ],
+  "content": {
+    "eyebrow": "TONIGHT · 20:30",
+    "title": "Aftersun",
+    "subtitle": "A film by Charlotte Wells · 102 min",
+    "items": [
+      { "title": "The Zone of Interest", "meta": "18:00 · Screen 2", "body": "Jonathan Glazer · 105 min" },
+      { "title": "Perfect Days", "meta": "20:45 · Screen 1", "body": "Wim Wenders · 124 min" },
+      { "title": "All of Us Strangers", "meta": "22:10 · Screen 3", "body": "Andrew Haigh · 105 min" }
+    ],
+    "action": "Reserve a seat",
+    "nav": ["Tonight", "Calendar", "Saved"]
+  },
+  "screens": {
+    "home": "A full-bleed hero for the featured event, a time-and-venue line, then a horizontal line-up of alternatives. The hero is the only image at full width.",
+    "detail": "An image-led detail: title, time, venue, a short description, and one reserve action. Keep the back gesture.",
+    "compose": "A short booking flow: date, time, quantity, seat or tier, payment. Show the real price and fees before confirmation.",
+    "profile": "A ticket wallet: upcoming and past, with clear dates and venues. No fake loyalty points."
+  },
+  "components": {
+    "button": "Solid accent with high contrast; a text-only secondary. Avoid pills unless the whole shape language is soft.",
+    "list": "Horizontal poster cards with 3:4 or 2:3 imagery, title and time below. Do not wrap each card in another card.",
+    "input": "Minimal underline or filled field, large touch targets, clear error text.",
+    "navigation": "Transparent top bar over imagery, tab bar for peers, sheets for detail."
+  }
+}

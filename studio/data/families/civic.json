@@ -1,0 +1,137 @@
+{
+  "id": "civic",
+  "name": "Civic",
+  "thesis": "The app is a public building: open, legible, and accountable to everyone who walks in.",
+  "bestFor": "Government, transit, education, community services, public health, voting, and local organizing.",
+  "keywords": ["government", "city", "public", "transit", "school", "education", "community", "services", "benefits", "voting", "election", "health", "clinic", "library", "permit", "tax", "neighborhood", "nonprofit", "volunteer", "accessibility"],
+  "feelings": ["trustworthy", "open", "plainspoken", "inclusive", "steady", "accountable", "welcoming", "useful"],
+  "contentTypes": ["mixed", "text"],
+  "avoidFor": ["luxury", "nightlife", "gambling", "fashion"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "notice-board",
+      "name": "Notice Board",
+      "summary": "A public notice board: strong headings, plain language, and clear deadlines.",
+      "signature": "A colored left rule that marks urgency.",
+      "treatment": "Warm white surface, bold sans headings, colored urgency rules, and a chronological list.",
+      "density": "comfortable",
+      "displaySize": 34,
+      "bodySize": 17,
+      "labelCase": "uppercase",
+      "previewClass": "civic-notice-board"
+    },
+    {
+      "id": "service-desk",
+      "name": "Service Desk",
+      "summary": "A service counter: step-by-step forms, visible progress, and human help nearby.",
+      "signature": "A numbered step rail that stays visible.",
+      "treatment": "Calm blue surfaces, numbered steps, large form controls, and a persistent help affordance.",
+      "density": "comfortable",
+      "displaySize": 30,
+      "bodySize": 17,
+      "labelCase": "uppercase",
+      "previewClass": "civic-service-desk"
+    },
+    {
+      "id": "wayfinding",
+      "name": "Wayfinding",
+      "summary": "A transit sign: oversized labels, strong contrast, and routes you can read at a glance.",
+      "signature": "A route badge that repeats across every screen.",
+      "treatment": "High-contrast color bands, oversized numerals, route badges, and a strict grid.",
+      "density": "compact",
+      "displaySize": 40,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "civic-wayfinding"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F4F6F8",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#111827",
+      "muted": "#4B5563",
+      "border": "#D5DBE3"
+    },
+    "dark": {
+      "background": "#0B111B",
+      "surface": "#131C29",
+      "elevated": "#1B2635",
+      "text": "#F0F4F9",
+      "muted": "#AAB6C6",
+      "border": "#2C394B"
+    },
+    "accents": [
+      { "id": "civic-blue", "name": "Civic Blue", "light": "#0B4F9C", "dark": "#8AB8F5", "onLight": "#FFFFFF", "onDark": "#06152B" },
+      { "id": "transit-red", "name": "Transit Red", "light": "#B42318", "dark": "#FF9A8F", "onLight": "#FFFFFF", "onDark": "#220706" },
+      { "id": "park-green", "name": "Park Green", "light": "#246B45", "dark": "#8ED3AA", "onLight": "#FFFFFF", "onDark": "#06170E" },
+      { "id": "signal-yellow", "name": "Signal Yellow", "light": "#7A5200", "dark": "#F2C94C", "onLight": "#FFFFFF", "onDark": "#1C1303" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro Display / Roboto",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.25,
+    "sizes": { "display": 40, "title": 28, "headline": 22, "body": 17, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.01, "label": 0.04 }
+  },
+  "shape": { "family": "plain", "small": 2, "medium": 6, "large": 12, "pill": 999 },
+  "surface": "flat-public",
+  "motion": { "curve": "ease-out", "fast": 120, "base": 200, "slow": 320 },
+  "signatureMoves": [
+    "A colored left rule that marks urgency.",
+    "A numbered step rail that stays visible.",
+    "A route badge that repeats across every screen.",
+    "A plain-language summary above the legal text."
+  ],
+  "platform": {
+    "ios": "Use the system navigation bar, back gesture, and sheet detents. Support Dynamic Type up to accessibility sizes, VoiceOver, and reduce motion. Never rely on color alone. Keep forms in one column with 44pt targets.",
+    "android": "Edge-to-edge with a TopAppBar and predictive back. Support TalkBack and 200% font scale. Use 48dp targets and visible focus states. Keep forms in one column. No custom gestures where a button will do."
+  },
+  "principles": [
+    "Plain language first; jargon last.",
+    "Every deadline and cost is visible up front.",
+    "Never use color alone to carry meaning.",
+    "Help is always one tap away."
+  ],
+  "avoid": [
+    "Official-looking seals and crests used as decoration.",
+    "A carousel of announcements that hides the important one.",
+    "A form that asks for the same information twice.",
+    "Small gray legal text as the only explanation."
+  ],
+  "content": {
+    "eyebrow": "CITY OF NORTHFIELD · SERVICES",
+    "title": "Renew a permit",
+    "subtitle": "Open until 30 Nov · 4 steps · About 10 min",
+    "items": [
+      { "title": "Building permit", "meta": "Due 30 Nov", "body": "Renew online, no appointment needed" },
+      { "title": "Street parking", "meta": "Due 15 Nov", "body": "Annual resident pass" },
+      { "title": "Dog licence", "meta": "Due 01 Dec", "body": "Valid for one calendar year" }
+    ],
+    "action": "Start renewal",
+    "nav": ["Services", "Notices", "Help"]
+  },
+  "screens": {
+    "home": "A plain-language service index: one clear search, the top three tasks, and current notices with dates. Deadlines are visible without opening anything.",
+    "detail": "A service detail: what it is, who it is for, what it costs, what you need, and how long it takes. The start action is above the fold.",
+    "compose": "A multi-step form with a visible step count, one question per screen where possible, saved progress, and a real review step before submit.",
+    "profile": "A personal record: applications, documents, and payments. Show status in text as well as color, and make every record downloadable."
+  },
+  "components": {
+    "button": "Solid civic blue with a 6-12pt radius and a text label. Secondary actions are outlined. Never icon-only for a consequential action.",
+    "list": "Flat rows with a 1pt separator and a colored urgency rule only when there is a real deadline. No shadows.",
+    "input": "Label above, one field per row, hint text below, error in text and color. Large targets and visible focus.",
+    "navigation": "Top app bar plus tab bar for two or three peers. A help action in the toolbar. No hamburger."
+  }
+}

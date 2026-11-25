@@ -1,0 +1,136 @@
+{
+  "id": "luxe",
+  "name": "Luxe",
+  "thesis": "The app is a quiet room: generous space, one beautiful object at a time, and confidence without noise.",
+  "bestFor": "Fashion, beauty, hospitality, premium commerce, dining, and interiors.",
+  "keywords": ["luxury", "fashion", "beauty", "travel", "hotel", "booking", "commerce", "boutique", "jewelry", "architecture", "interior", "premium", "concierge", "dining", "wine", "spa", "resort"],
+  "feelings": ["refined", "quiet", "luxurious", "confident", "timeless", "exclusive", "sensual", "composed"],
+  "contentTypes": ["visual", "sparse"],
+  "avoidFor": ["budget", "utility", "developer tools", "trading"],
+  "density": "spacious",
+  "variants": [
+    {
+      "id": "atelier",
+      "name": "Atelier",
+      "summary": "An ivory atelier: serif title, one garment at a time, and generous space.",
+      "signature": "A full-bleed image with a small serif caption.",
+      "treatment": "Ivory surfaces, a serif display face, large imagery, and a slow, spacious rhythm.",
+      "density": "spacious",
+      "displaySize": 42,
+      "bodySize": 16,
+      "labelCase": "small-caps",
+      "previewClass": "luxe-atelier"
+    },
+    {
+      "id": "concierge",
+      "name": "Concierge",
+      "summary": "A dark concierge: gold rules, curated cards, and quiet confidence.",
+      "signature": "A gold rule under the section label.",
+      "treatment": "Near-black surfaces, a serif display face, brass accents, and curated horizontal cards.",
+      "density": "comfortable",
+      "displaySize": 38,
+      "bodySize": 15,
+      "labelCase": "small-caps",
+      "previewClass": "luxe-concierge"
+    },
+    {
+      "id": "boutique",
+      "name": "Boutique",
+      "summary": "A soft boutique: pastel surfaces, rounded arches, and gentle motion.",
+      "signature": "An arched image mask.",
+      "treatment": "Soft pastel surfaces, an arched image treatment, serif display, and gentle motion.",
+      "density": "comfortable",
+      "displaySize": 36,
+      "bodySize": 16,
+      "labelCase": "small-caps",
+      "previewClass": "luxe-boutique"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#F7F5F0",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#161412",
+      "muted": "#5E5A54",
+      "border": "#DDD8CE"
+    },
+    "dark": {
+      "background": "#0C0C0B",
+      "surface": "#151514",
+      "elevated": "#1E1D1B",
+      "text": "#F4F1EA",
+      "muted": "#A9A49B",
+      "border": "#2E2C28"
+    },
+    "accents": [
+      { "id": "brass", "name": "Brass", "light": "#8A6A2F", "dark": "#D9B56A", "onLight": "#FFFFFF", "onDark": "#1A1408" },
+      { "id": "burgundy", "name": "Burgundy", "light": "#6E1E2B", "dark": "#D98A9A", "onLight": "#FFFFFF", "onDark": "#1D080D" },
+      { "id": "forest", "name": "Forest", "light": "#294A3A", "dark": "#8FC4A8", "onLight": "#FFFFFF", "onDark": "#07120C" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "serif",
+    "body": "sans",
+    "numeric": "proportional",
+    "displayFamily": "New York / Noto Serif",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Pro / Roboto",
+    "scale": 1.333,
+    "sizes": { "display": 42, "title": 30, "headline": 22, "body": 16, "label": 12, "caption": 11 },
+    "tracking": { "display": -0.02, "label": 0.12 }
+  },
+  "shape": { "family": "soft", "small": 2, "medium": 8, "large": 16, "pill": 999 },
+  "surface": "image-hairline",
+  "motion": { "curve": "ease-out-soft", "fast": 220, "base": 340, "slow": 520 },
+  "signatureMoves": [
+    "A full-bleed image with a small serif caption.",
+    "A gold rule under the section label.",
+    "An arched image mask.",
+    "A single object floating in generous space."
+  ],
+  "platform": {
+    "ios": "Use a large title sparingly; let the image lead. Keep the system back gesture. Use a transparent navigation bar that becomes opaque on scroll. Sheets for detail. Use a tab bar only for true peers.",
+    "android": "Edge-to-edge imagery with a scrim where text sits. Use a top app bar that fades in. Use a bottom sheet for detail. No FAB. Respect predictive back."
+  },
+  "principles": [
+    "One object, one moment.",
+    "Space is the luxury.",
+    "Hairlines and images, not shadows.",
+    "Motion is slow but never blocking."
+  ],
+  "avoid": [
+    "A wall of equal product cards.",
+    "Gold gradients used as decoration.",
+    "A countdown timer on a premium product.",
+    "Fake scarcity or fake reviews."
+  ],
+  "content": {
+    "eyebrow": "THE ATELIER · SPRING",
+    "title": "Quiet form",
+    "subtitle": "A study in linen, stone, and light.",
+    "items": [
+      { "title": "The linen shirt", "meta": "$180 · 4 colours", "body": "Washed European linen" },
+      { "title": "The stone bowl", "meta": "$95 · Hand-thrown", "body": "Unglazed exterior, food-safe interior" },
+      { "title": "The wool throw", "meta": "$240 · Undyed", "body": "Woven in a small mill in Donegal" }
+    ],
+    "action": "View the collection",
+    "nav": ["Collection", "Search", "Saved"]
+  },
+  "screens": {
+    "home": "One full-bleed image or one large product, a short serif title, and a single line of context. The collection list begins below the fold with generous spacing.",
+    "detail": "A product or place detail: large image, name, price, materials, one primary action, and a quiet secondary action. Show the real price and availability.",
+    "compose": "A booking or order flow: dates, guests, room or item, price, confirmation. Show the full price before payment.",
+    "profile": "A quiet account: orders, saved items, preferences. No gamification, no fake status tiers."
+  },
+  "components": {
+    "button": "Rectangular or softly rounded, solid ink or accent, generous padding. Secondary actions are text with an underline.",
+    "list": "Large image rows with a small serif title and one metadata line. Hairline separators, no cards.",
+    "input": "Underline or soft filled field, generous height, quiet validation.",
+    "navigation": "Transparent over imagery, tab bar for peers, sheets for detail."
+  }
+}

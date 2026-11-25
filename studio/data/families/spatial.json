@@ -1,0 +1,136 @@
+{
+  "id": "spatial",
+  "name": "Spatial",
+  "thesis": "The app is a place: location, movement, and layers give the screen its structure.",
+  "bestFor": "Travel, maps, local discovery, real estate, delivery, and transit.",
+  "keywords": ["travel", "maps", "local", "places", "city", "hiking", "outdoors", "real estate", "delivery", "transit", "location", "guide", "exploration", "venue", "neighborhood", "route", "trail"],
+  "feelings": ["open", "curious", "grounded", "adventurous", "local", "calm", "tactile", "spatial"],
+  "contentTypes": ["visual", "mixed"],
+  "avoidFor": ["deep reading", "dense finance", "forms"],
+  "density": "comfortable",
+  "variants": [
+    {
+      "id": "trail-map",
+      "name": "Trail Map",
+      "summary": "A topographic field guide: earthy layers, route lines, and elevation labels.",
+      "signature": "A route line that connects cards.",
+      "treatment": "Earthy palette, contour-like rules, distance labels, and layered place cards.",
+      "density": "comfortable",
+      "displaySize": 36,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "spatial-trail-map"
+    },
+    {
+      "id": "city-guide",
+      "name": "City Guide",
+      "summary": "A bold city index: grid neighborhoods, oversized labels, and photo cards.",
+      "signature": "A vertical district label in the margin.",
+      "treatment": "Grid composition, oversized district names, photo cards, and a strong search bar.",
+      "density": "comfortable",
+      "displaySize": 42,
+      "bodySize": 16,
+      "labelCase": "uppercase",
+      "previewClass": "spatial-city-guide"
+    },
+    {
+      "id": "studio-canvas",
+      "name": "Studio Canvas",
+      "summary": "A light canvas: floating tools, soft panels, and spatial hierarchy.",
+      "signature": "A floating command bar that follows the canvas.",
+      "treatment": "Light canvas, floating panels, soft shadows, and a command bar that stays close to the content.",
+      "density": "comfortable",
+      "displaySize": 32,
+      "bodySize": 15,
+      "labelCase": "uppercase",
+      "previewClass": "spatial-studio-canvas"
+    }
+  ],
+  "palette": {
+    "light": {
+      "background": "#EEF3EC",
+      "surface": "#FFFFFF",
+      "elevated": "#FFFFFF",
+      "text": "#1A2420",
+      "muted": "#57645D",
+      "border": "#D2DDD4"
+    },
+    "dark": {
+      "background": "#0F1512",
+      "surface": "#17201B",
+      "elevated": "#1F2B24",
+      "text": "#EEF5EF",
+      "muted": "#A5B5AA",
+      "border": "#2C3B32"
+    },
+    "accents": [
+      { "id": "trail", "name": "Trail Orange", "light": "#B24A18", "dark": "#FF9A62", "onLight": "#FFFFFF", "onDark": "#1E0D05" },
+      { "id": "lake", "name": "Lake Blue", "light": "#0F5E7A", "dark": "#6BD3F2", "onLight": "#FFFFFF", "onDark": "#061A21" },
+      { "id": "moss", "name": "Moss", "light": "#3F6B3A", "dark": "#9DCE8F", "onLight": "#FFFFFF", "onDark": "#0A1708" }
+    ],
+    "semantic": {
+      "light": { "success": "#1F6B45", "warning": "#8A5A00", "danger": "#A61B2B" },
+      "dark": { "success": "#7BC4A0", "warning": "#E0B05A", "danger": "#FF8A8A" }
+    }
+  },
+  "type": {
+    "display": "sans",
+    "body": "sans",
+    "numeric": "tabular",
+    "displayFamily": "SF Pro Display / Roboto",
+    "bodyFamily": "SF Pro / Roboto",
+    "numericFamily": "SF Mono / Roboto Mono",
+    "scale": 1.25,
+    "sizes": { "display": 40, "title": 28, "headline": 21, "body": 16, "label": 13, "caption": 12 },
+    "tracking": { "display": -0.02, "label": 0.06 }
+  },
+  "shape": { "family": "organic", "small": 8, "medium": 16, "large": 24, "pill": 999 },
+  "surface": "layered",
+  "motion": { "curve": "ease-out", "fast": 160, "base": 240, "slow": 360 },
+  "signatureMoves": [
+    "A route line that connects cards.",
+    "A vertical district label in the margin.",
+    "A floating command bar that follows the canvas.",
+    "A map pin that expands into a place card."
+  ],
+  "platform": {
+    "ios": "Use a full-bleed map or canvas under a floating search field. Use a bottom sheet with detents for place details. Keep the system back gesture. Use SF Symbols and a tab bar for peers.",
+    "android": "Edge-to-edge map or canvas with a floating search bar. Use a bottom sheet for details. Predictive back. Use a NavigationBar or rail; no FAB unless it creates a place."
+  },
+  "principles": [
+    "Place first; list second.",
+    "One floating control layer, not five.",
+    "Use real geography or real spatial hierarchy.",
+    "Cards are annotations, not the page."
+  ],
+  "avoid": [
+    "A map with a generic grid of cards over it.",
+    "A floating action button with no spatial job.",
+    "Decorative contour lines that do not encode data.",
+    "A list that ignores location."
+  ],
+  "content": {
+    "eyebrow": "NEAR YOU · 6 TRAILS",
+    "title": "The north ridge",
+    "subtitle": "6 trails · 2.4 km from here",
+    "items": [
+      { "title": "Ridge Loop", "meta": "4.2 km · Moderate", "body": "Open ridgeline with three viewpoints" },
+      { "title": "Cedar Falls", "meta": "2.8 km · Easy", "body": "Shaded path to a seasonal waterfall" },
+      { "title": "Summit Spur", "meta": "6.1 km · Hard", "body": "Steep climb, exposed at the top" }
+    ],
+    "action": "Open the map",
+    "nav": ["Explore", "Routes", "Saved"]
+  },
+  "screens": {
+    "home": "A map or spatial canvas occupies the top two-thirds, with one floating search/control bar and a bottom sheet preview of the nearest place. The list is an annotation, not a wall of cards.",
+    "detail": "A place detail: hero image or map, name, distance, one key fact, and actions (directions, save, share). Keep the back gesture and the map position.",
+    "compose": "A route or place creation flow: search, drop a pin, name it, add a note, save. Show the pin on a map before committing.",
+    "profile": "A personal atlas: saved places, routes, and trips. Use a map or spatial index, not a generic settings list."
+  },
+  "components": {
+    "button": "Rounded 16-24pt, but only for floating controls and primary actions. List rows stay flat.",
+    "list": "Place rows with a small map thumbnail or distance marker, a bold name, and one metadata line. No heavy cards.",
+    "input": "Search field floats over the map with a clear action and recent searches.",
+    "navigation": "Floating search, bottom sheet, tab bar or rail. Keep the system back gesture."
+  }
+}

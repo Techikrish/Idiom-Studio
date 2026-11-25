@@ -1,0 +1,28 @@
+{
+  "id": "mineral",
+  "name": "Mineral",
+  "character": "Warm and tactile. Soft depth without gloss.",
+  "keywords": ["wellness", "health", "habit", "lifestyle", "meditation", "homemaking", "care", "calm", "food", "sleep"],
+  "colors": {
+    "light": {
+      "surface": "#F7F4EF",
+      "onSurface": "#1C1A17",
+      "muted": "#6B645C",
+      "accent": "#8A5A3B",
+      "onAccent": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#171411",
+      "onSurface": "#F3EEE6",
+      "muted": "#B3A79A",
+      "accent": "#D9A273",
+      "onAccent": "#171411"
+    }
+  },
+  "type": { "display": "serif", "body": "sans", "numeric": "proportional" },
+  "shape": { "family": "soft", "small": 8, "medium": 16, "large": 24 },
+  "surface": "border-first",
+  "motion": { "curve": "ease-out-soft", "fast": 180, "base": 260, "slow": 380 },
+  "density": "comfortable",
+  "signature": "Warm neutrals, one clay accent, and borders instead of shadows."
+}
